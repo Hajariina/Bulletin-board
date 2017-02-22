@@ -1,0 +1,29 @@
+html
+	head
+		body
+			nav
+			div
+				ul
+					li
+						a(href="/") This is the first page
+
+					li
+
+						a(href="/secondpage") This is the second page
+			block content
+
+				.container
+
+				h1 Bulletin board
+
+				hr
+
+				div.container.custom
+
+					each allMessages in randomKey
+
+						div.box
+
+							h3 #{allMessages.title}
+
+							p #{allMessages.body}
